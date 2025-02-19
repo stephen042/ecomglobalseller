@@ -80,7 +80,7 @@ class EditUserWithdrawalCodes extends Component
 
                 
         if ($result) {
-            session()->flash('success', 'Customer IMF Code Updated successfully');
+            session()->flash('success', 'Customer COT Code Updated successfully');
 
             return redirect()->route('admin_editUser', [$user_id]);
         }

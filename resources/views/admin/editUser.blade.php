@@ -58,7 +58,7 @@
 
                     </div>
                 </div><!-- End Sales Card -->
-                <div class="col-xxl-4 col-md-4">
+                {{-- <div class="col-xxl-4 col-md-4">
                     <div class="card info-card sales-card">
 
                         <div class="card-body">
@@ -75,7 +75,7 @@
                         </div>
 
                     </div>
-                </div><!-- End Sales Card -->
+                </div><!-- End Sales Card --> --}}
                 <div class="col-xxl-4 col-md-4">
                     <div class="card info-card sales-card">
 

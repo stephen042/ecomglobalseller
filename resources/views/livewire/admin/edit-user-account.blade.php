@@ -84,7 +84,7 @@
         </div>
     </div><!-- COL END -->
     <!-- COL START -->
-    <div class="col-sm-12 col-md-6  col-xl-4">
+    {{-- <div class="col-sm-12 col-md-6  col-xl-4">
         <div class="card">
             <div class="card-body p-3">
                 <form wire:submit="increase_user_total_sales">
@@ -124,7 +124,7 @@
                 </form>
             </div>
         </div>
-    </div><!-- COL END -->
+    </div><!-- COL END --> --}}
     <!-- COL START -->
     <div class="col-sm-12 col-md-6  col-xl-4">
         <div class="card">
