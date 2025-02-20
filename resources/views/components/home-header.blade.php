@@ -23,16 +23,11 @@
                 <ul>
                     <li class="nav-back"><button class="nav-back-button">Back</button></li>
                     <li class="nav-divider"></li>
-                    <li class=" "><a href="/">Export</a>
+                    <li class=""><a href="/">Export</a>
                     </li>
-                    <li class=" "><a>Pricing</a>
+                    <li class=" "><a href="mailto:{{config('app.Admin_email')}}">Learn</a>
                     </li>
-                    <li class=" "><a href="#">Learn</a>
-                    </li>
-                    <li class=" "><a href="/">Blogs</a>
-                    </li>
-                    <li class=" "><a></a></li>
-                    <li class=" "><a href="/">Sell on Amazon</a>
+                    <li class=" "><a href="{{route('login')}}">login to Sell</a>
                     </li>
                 </ul>
                 <a class="nav-menu-cta link button button-type-primary popup-link" href="{{route('register')}}" >Register</a>

@@ -94,9 +94,9 @@
     <meta name="description"
         content="Export products and sell on Amazon Globally by registering with Amazon Global Selling. Take your products to millions of customers in the world.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Export to Globally from India and sell on Amazon marketplace ">
+    <meta property="og:title" content="Export to Globally and sell on Amazon marketplace ">
     <meta property="og:description"
-        content="Export products and sell on Amazon Globally by registering with Amazon Global Selling. Take your &lsquo;Made in India&rsquo; products to millions of customers in the world.">
+        content="Export products and sell on Amazon Globally by registering with Amazon Global Selling. Take your products to millions of customers in the world.">
     <meta property="og:site_name" content="https://sell.amazon.in/grow-your-business/amazon-global-selling">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sell.amazon.in/grow-your-business/amazon-global-selling/asia-pacific">

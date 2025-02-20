@@ -8,11 +8,7 @@
                 <nav class="nav-type-footer nav-style-dark ">
                     <section class="nav-footer-top">
                         <article class="nav-footer-breadcrumbs"></article>
-                        <article class="nav-footer-button-wrap"><button
-                                class="link popup-link  button button-type-secondary-light button-type-language"
-                                data-popup-id="footer-nav-language-picker-popup">English</button><button
-                                class="country-picker country-picker-style-undefined button-type-country button-type-secondary-undefined country-IN link popup-link  button button-type-secondary-light"
-                                data-popup-id="footer-nav-country-picker-popup">India</button>
+                        <article class="nav-footer-button-wrap">
                             <div class="popup-layover hide" id="footer-nav-country-picker-popup">
                                 <div class="popup">
                                     <div class="popup-close-container"><a class="hide close-popup"
@@ -110,8 +106,7 @@
                                             you’re located.</p>
                                     </div>
                                 </div>
-                            </div><button class="link popup-link  button button-type-secondary-light button-type-hmd"
-                                data-popup-id="hmd-picker-popup">Feedback</button>
+                            </div>
                         </article>
                     </section>
                     <section class="nav-footer-wrap">

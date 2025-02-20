@@ -250,9 +250,7 @@
                             id="" style="width:100%">
                             <div class="text align-start color-squid-ink font-size-small ember font-normal">
                                 Focus on your business and let Amazon help you with
-                                international shipping and logistics. With <a
-                                    href="https://sell.amazon.in/grow-your-business/amazon-global-selling/fulfillment">Amazon
-                                    FBA</a>, exporting your products Globally is
+                                international shipping and logistics. With Amazon FBA, exporting your products Globally is
                                 hassle-free.</div>
                         </div>
                     </div>
@@ -284,11 +282,7 @@
                                 id="" style="width:100%">
                                 <div class="text align-start color-squid-ink font-size-small ember font-normal">
                                     Increase sales by selling in Amazon Globally events
-                                    like <a
-                                        href="https://sell.amazon.in/grow-your-business/amazon-global-selling/blogs/amazon-prime-day-sale">Prime
-                                        Day</a>, <a
-                                        href="https://sell.amazon.in/grow-your-business/amazon-global-selling/blogs/tips-for-cyber-monday-black-friday-sale">Black
-                                        Friday and Cyber Monday</a>.</div>
+                                    likePrime , Black Friday and Cyber Monday.</div>
                             </div>
                         </div>
                     </div>
@@ -315,11 +309,7 @@
                                 <div class="text align-start color-squid-ink font-size-small ember font-normal">
                                     Being one of the most visited marketplace on earth,
                                     Amazon helps your business grow with its latest tools
-                                    like <a
-                                        href="https://sell.amazon.in/grow-your-business/amazon-global-selling/perfect-launch/advertising">advertising</a>,
-                                    <a
-                                        href="https://sell.amazon.in/grow-your-business/amazon-global-selling/perfect-launch/brand-registry">Brand
-                                        Registry</a>, Perfect Launch, and mre.
+                                    like advertising, Brand Registry, Perfect Launch, and mre.
                                 </div>
                             </div>
                         </div>
@@ -386,21 +376,21 @@
                     id="" style="width:100%">
                     <ul class="list ">
                         <li class="color-squid-ink font-size-default ember "><a
-                                href="mailto:{{'app.Admin_email'}}">Importer
+                                href="mailto:{{config('app.Admin_email')}}">Importer
                                 Exporter Code (IEC)</a></li>
                         <li class="color-squid-ink font-size-default ember "><a
-                                href="mailto:{{'app.Admin_email'}}">Commercial
-                                Invoice</a> cum <a href="mailto:{{'app.Admin_email'}}">Packing
+                                href="mailto:{{config('app.Admin_email')}}">Commercial
+                                Invoice</a> cum <a href="mailto:{{config('app.Admin_email')}}">Packing
                                 List</a></li>
                         <li class="color-squid-ink font-size-default ember ">Pro forma
                             Invoice</li>
-                        <li class="color-squid-ink font-size-default ember "><a href="mailto:{{'app.Admin_email'}}">Bill
+                        <li class="color-squid-ink font-size-default ember "><a href="mailto:{{config('app.Admin_email')}}">Bill
                                 of Lading</a></li>
                         <li class="color-squid-ink font-size-default ember "><a
-                                href="mailto:{{'app.Admin_email'}}">Certificate
+                                href="mailto:{{config('app.Admin_email')}}">Certificate
                                 of Origin</a></li>
                         <li class="color-squid-ink font-size-default ember "><a
-                                href="mailto:{{'app.Admin_email'}}">Certificates
+                                href="mailto:{{config('app.Admin_email')}}">Certificates
                                 of Inspection</a> (if applicable)</li>
                         <li class="color-squid-ink font-size-default ember ">Other
                             product-specific documents (if applicable)</li>
@@ -479,7 +469,7 @@
                             <h4 class="heading"></h4>
                             <ul class="bottom-right-info">
                                 <li><a class="link link-type-standard-dark"
-                                        href="https://sell.amazon.in/grow-your-business/amazon-global-selling/blogs/tips-for-cyber-monday-black-friday-sale">How
+                                        href="mailto:{{config('app.Admin_email')}}">How
                                         to gear up for Cyber Monday and Black Friday
                                         sale?</a></li>
                             </ul>
@@ -507,7 +497,7 @@
             <div class="has-max-width">
                 <div class="text align-center color-squid-ink font-size-default ember font-normal">
                     Starting an <a
-                        href="https://sell.amazon.in/grow-your-business/amazon-global-selling/blogs/ecommerce-exports-from-india">e-commerce
+                        href="{{route('register')}}">e-commerce
                         exports</a> business is easy and hassle-free with Amazon. Below are
                     the steps you can follow to start exporting:</div>
             </div>
@@ -569,8 +559,8 @@
                                         Choosing what products to export to the
                                         Middle East is a crucial step. It is important to
                                         understand product demand and plan your business
-                                        goals. Amazon facilitates export of <a href="#">30+
-                                            product categories</a> that can be exported from
+                                        goals. Amazon facilitates export of 30+
+                                            product categories that can be exported from
                                         India to Singapore.</div>
                                 </div>
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-center flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
@@ -645,7 +635,7 @@
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                     id="" style="width:100%">
                                     <div class="align-start"><a
-                                            href="https://sell.amazon.in/grow-your-business/amazon-global-selling/registration-guide"
+                                            href="mailto:{{config('app.Admin_email')}}"
                                             class="link  link-type-standard-dark">Know more
                                             about registration</a></div>
                                 </div>
@@ -714,7 +704,7 @@
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                     id="" style="width:100%">
                                     <div class="align-start"><a
-                                            href="/"
+                                            href="mailto:{{config('app.Admin_email')}}"
                                             class="link  link-type-standard-dark">Learn how
                                             to list products</a></div>
                                 </div>
@@ -779,16 +769,14 @@
                                         shipping of export products by facilitating pickup,
                                         storage, delivery and customer care services. To
                                         help you focus on your business growth, Amazon also
-                                        makes <a
-                                            href="https://sell.amazon.in/grow-your-business/amazon-global-selling/blogs/international-shipping">international
-                                            shipping</a> and <a
-                                            href="https://sell.amazon.in/grow-your-business/amazon-global-selling/blogs/export-logistics">logistics</a>
+                                        makes international
+                                            shipping and logistics
                                         simple with Amazon SEND. </div>
                                 </div>
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                     id="" style="width:100%">
                                     <div class="align-start"><a
-                                            href="https://sell.amazon.in/grow-your-business/amazon-global-selling/fulfillment"
+                                            href="mailto:{{config('app.Admin_email')}}"
                                             class="link  link-type-standard-dark">Learn more
                                             about fulfillment</a></div>
                                 </div>
@@ -888,10 +876,7 @@
                 </div>
                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                     id="" style="width:100%">
-                    <div class="align-start"><a
-                            href="https://sell.amazon.in/grow-your-business/amazon-global-selling/exports-digest"
-                            class="link  link-type-standard-dark">Read Exports Digest 2024
-                            here</a></div>
+                    
                 </div>
             </div>
             <div class="tile-wrap background-color-white border-color-white border-radius-8px    padding-left-base padding-right-zero padding-top-base padding-bottom-base border-left-1px border-right-1px border-top-1px border-bottom-1px flex-container flex-align-items-stretch flex-align-content-flex-start amsg-2018 fonts-loaded border-color-white design-Sell hover-scale-up hover-length-fast"
@@ -916,10 +901,7 @@
                 </div>
                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                     id="INAGS_webinar_page" style="width:100%">
-                    <div class="align-start"><a
-                            href="https://sell.amazon.in/grow-your-business/amazon-global-selling/training"
-                            class="link  link-type-standard-dark">Explore the webinar
-                            calendar here</a></div>
+                    
                 </div>
             </div><svg alt="" class="wave-placement-bottom " height="354px" preserveaspectratio="none"
                 role="presentation" version="1.1" viewbox="0 0 1440 354" width="1440px"
@@ -1025,9 +1007,9 @@
                                                             <p class="top-text color-squid-ink font-size-xsmall">
                                                                 Already Selling on Amazon?
                                                             </p><a
-                                                                href="https://sellercentral.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.in%2Fhome&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=sc_in_amazon_v2&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=sc_in_amazon_v2&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.assoc_handle=sc_in_amazon_v2&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=logout&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fsellercentral.amazon.in%2Fap%2Fsignin%3Fopenid.pape.max_auth_age%3D0%26openid.return_to%3Dhttps%253A%252F%252Fsellercentral.amazon.in%252Fhome%26openid.identity%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26openid.assoc_handle%3Dsc_in_amazon_v2%26openid.mode%3Dcheckid_setup%26language%3Den_IN%26openid.claimed_id%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%252Fidentifier_select%26pageId%3Dsc_in_amazon_v2%26openid.ns%3Dhttp%253A%252F%252Fspecs.openid.net%252Fauth%252F2.0%26&ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.QTR6B6-Bbbk9vJBx6HEORpobK9CZ78i4jpe6t5JU07deqfhGULphhA.kbJ-cAm4XGON2Dd-.rry2TRT8eiu6gpLZyq1YTpA4cH4hoFQXdjfoDsVUOzpU0FYVACDdrlmjLEn8xSU4dRIcNPeP22poShFr7YSW2K2jFW3WDxQSq_AXsgCJrfC82Zx3ln-sdyD7Sx0NQbLbFqw_khQ2k99rOqjJLx1Kgdi31FwVWw-iTiGVG0YX3ekgn8SWlx8hLAnKnWGUU4XZzglzECV4xUiccA8iT_EQVAvNchezLeyziJ1Jp1NXm2BK1AqcvzauQfOypdoNWkwnmQ.ZsWxiaeWGCftjiK1039PHA"
+                                                                href="{{route('login')}}"
                                                                 class="link button button-type-secondary-dark font-size-regular "
-                                                                data-ld-append="SDINAGS_SG_faq" aria-label="">Expand
+                                                                data-ld-append="SDINAGS_SG_faq" aria-label="">Login
                                                                 Now</a>
                                                             <p class="bottom-text color-squid-ink font-size-xsmall">
                                                                 <span> </span>
@@ -1084,7 +1066,7 @@
                                                     all you need to do is decide the country
                                                     you want to sell in and simply follow
                                                     the easy steps mentioned <a
-                                                        href="https://sell.amazon.in/grow-your-business/amazon-global-selling">here</a>.
+                                                        href="mailto:{{config('app.Admin_email')}}">here</a>.
                                                 </div>
                                             </div>
                                         </div>
