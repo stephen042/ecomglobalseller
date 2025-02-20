@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Flags / Singapore</title>
+    <g id="Icon-/-Flags-/-Singapore" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,10 L24,10 L24,16 C24,17.1045695 23.1045695,18 22,18 L2,18 C0.8954305,18 1.3527075e-16,17.1045695 0,16 L0,10 L0,10 Z" id="Rectangle-Copy" fill="#FAFAFA"></path>
+        <path d="M0,0 L24,0 L24,8 C24,9.1045695 23.1045695,10 22,10 L2,10 C0.8954305,10 1.3527075e-16,9.1045695 0,8 L0,0 L0,0 Z" id="Rectangle-Copy" fill="#E25950" transform="translate(12.000000, 5.000000) scale(1, -1) translate(-12.000000, -5.000000) "></path>
+        <circle id="Oval" fill="#FAFAFA" cx="8.5" cy="3.5" r="1"></circle>
+        <circle id="Oval-Copy" fill="#FAFAFA" cx="6.5" cy="4.5" r="1"></circle>
+        <circle id="Oval-Copy-2" fill="#FAFAFA" cx="7.5" cy="6.5" r="1"></circle>
+        <circle id="Oval-Copy-3" fill="#FAFAFA" cx="9.5" cy="6.5" r="1"></circle>
+        <circle id="Oval-Copy-4" fill="#FAFAFA" cx="10.5" cy="4.5" r="1"></circle>
+        <path d="M23,10 L24,10 L24,16 C24,17.1045695 23.1045695,18 22,18 L2,18 C0.8954305,18 1.3527075e-16,17.1045695 0,16 L0,10 L0,10 L1,10 L1,15 C1,16.1045695 1.8954305,17 3,17 L21,17 C22.1045695,17 23,16.1045695 23,15 L23,10 L23,10 Z" id="Rectangle" fill="#EAEDED"></path>
+        <path d="M4.99932461,2 C5.35021762,2 5.68703705,2.06026977 6,2.17102423 C4.83421189,2.58248558 3.99954974,3.69374794 3.99954974,5 C3.99954974,6.30625206 4.83421189,7.41751442 5.99918839,7.82932572 C5.68703705,7.93973023 5.35021762,8 4.99932461,8 C3.34284337,8 2,6.65685425 2,5 C2,3.34314575 3.34284337,2 4.99932461,2 Z" id="Combined-Shape" fill="#FAFAFA"></path>
+    </g>
+</svg>

@@ -7,14 +7,14 @@
   <title> </title>
   <meta name="description"
     content="BeginnersFba &amp; eCommerce Management. Serving US, UK, EU clients. We help you sell on Amazon, Etsy and Shopify high ticket dropshipping stores.">
-  <link rel="stylesheet" href="homeAssets/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+  <link rel="stylesheet" href="{{asset('homeAssets/ajax/libs/font-awesome/6.1.0/css/all.min.css')}}"
     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="homeAssets/npm/bootstrap%405.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="homeAssets/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link href="{{ asset('homeAssets/wp-content/uploads/2021/02/BeginnersFba.png') }}" rel="shortcut icon"
+  <link href="{{asset('homeAssets/images/G/01/sell/images/favicon.ico')}}" rel="shortcut icon"
     type="image/x-icon">
   <style>
     @import url("css2");
@@ -153,7 +153,7 @@
       <div class="login-text">
         <div class="logo">
           <a href="/">
-            <img src="homeAssets/wp-content/uploads/2021/02/BeginnersFba.png" style="width:250px">
+            <img src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}" style="width:250px">
           </a>
 
           <div>

@@ -34,7 +34,7 @@
     </script>
     <!-- / Yoast SEO plugin. -->
 
-    <link href="{{ asset('homeAssets/wp-content/uploads/2021/02/BeginnersFba.png') }}" rel="shortcut icon"
+    <link href="{{asset('homeAssets/images/G/01/sell/images/favicon.ico')}}" rel="shortcut icon"
         type="image/x-icon">
 
     <link rel='dns-prefetch' href='http://www.googletagmanager.com/'>
@@ -876,18 +876,18 @@
                             <!-- Header logo -->
                             <a href="/" title="Ecomglobalseller - Your eCom Partner" rel="home">
                                 <img width="300" height="80" alt="Ecomglobalseller"
-                                    data-src="homeAssets/wp-content/uploads/2021/02/FbaBeginners.png"
+                                    data-src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}"
                                     class="header_logo header-logo lazyload"
                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
                                         width="250" height="57"
-                                        src="homeAssets/wp-content/uploads/2021/02/FbaBeginners.png"
+                                        src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}"
                                         class="header_logo header-logo" alt="Ecomglobalseller"></noscript><img width="250"
                                     height="57" alt="Ecomglobalseller"
-                                    data-src="homeAssets/wp-content/uploads/2021/02/BeginnersFba.png"
+                                    data-src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}"
                                     class="header-logo-dark lazyload"
                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
                                         width="250" height="57"
-                                        src="homeAssets/wp-content/uploads/2021/02/BeginnersFba.png"
+                                        src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}"
                                         class="header-logo-dark" alt="BeginnersFba"></noscript></a>
                         </div>
 
@@ -1022,46 +1022,7 @@
 
 
 
-                <div id="col-2106782976" class="col medium-4 small-12 large-4">
-                    <div class="col-inner">
-
-
-
-                        <div class="ux-menu stack stack-col justify-start ux-menu--divider-solid">
-
-
-                            <div class="ux-menu-link flex menu-item ux-menu-link--active">
-                                <a class="ux-menu-link__link flex" href="/">
-                                    <span class="ux-menu-link__text">
-                                        Dropshipping Suppliers </span>
-                                </a>
-                            </div>
-
-
-                            <div class="ux-menu-link flex menu-item">
-                                <a class="ux-menu-link__link flex"
-                                    href="how-to-fix-amazon-seller-error-5665-without-brand-registry">
-                                    <span class="ux-menu-link__text">
-                                        List Amazon Products without Error 5665 </span>
-                                </a>
-                            </div>
-
-
-                            <div class="ux-menu-link flex menu-item">
-                                <a class="ux-menu-link__link flex"
-                                    href="how-to-launch-your-first-product-on-amazon-in-2021">
-                                    <span class="ux-menu-link__text">
-                                        Ecomglobalseller Models </span>
-                                </a>
-                            </div>
-
-
-
-                        </div>
-
-
-                    </div>
-                </div>
+                
 
 
 
