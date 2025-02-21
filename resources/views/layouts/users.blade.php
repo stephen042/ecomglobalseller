@@ -155,7 +155,7 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- live chat -->
-    {{-- <script src="//code.jivosite.com/widget/NInO2bgwq9" async></script> --}}
+    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=09fTEhjKN73h"></script>
 
     <!-- Vendor JS Files -->
     <script src="{{ URL('assets/vendor/apexcharts/apexcharts.min.js') }}"></script>

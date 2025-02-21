@@ -46,8 +46,7 @@
                         </div>
                         <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-mini padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                             id="" style="width:100%">
-                            <div class="align-start"><a
-                                    href="{{route('register')}}"
+                            <div class="align-start"><a href="{{route('register')}}"
                                     class="link  button button-type-primary font-size-xlarge button-focus-default"
                                     data-ld-append="SDINAGSSG_Page" target="_blank">Register</a></div>
                         </div>
@@ -250,7 +249,8 @@
                             id="" style="width:100%">
                             <div class="text align-start color-squid-ink font-size-small ember font-normal">
                                 Focus on your business and let Amazon help you with
-                                international shipping and logistics. With Amazon FBA, exporting your products Globally is
+                                international shipping and logistics. With Amazon FBA, exporting your products Globally
+                                is
                                 hassle-free.</div>
                         </div>
                     </div>
@@ -384,7 +384,8 @@
                                 List</a></li>
                         <li class="color-squid-ink font-size-default ember ">Pro forma
                             Invoice</li>
-                        <li class="color-squid-ink font-size-default ember "><a href="mailto:{{config('app.Admin_email')}}">Bill
+                        <li class="color-squid-ink font-size-default ember "><a
+                                href="mailto:{{config('app.Admin_email')}}">Bill
                                 of Lading</a></li>
                         <li class="color-squid-ink font-size-default ember "><a
                                 href="mailto:{{config('app.Admin_email')}}">Certificate
@@ -496,8 +497,7 @@
             id="" style="width:100%">
             <div class="has-max-width">
                 <div class="text align-center color-squid-ink font-size-default ember font-normal">
-                    Starting an <a
-                        href="{{route('register')}}">e-commerce
+                    Starting an <a href="{{route('register')}}">e-commerce
                         exports</a> business is easy and hassle-free with Amazon. Below are
                     the steps you can follow to start exporting:</div>
             </div>
@@ -560,7 +560,7 @@
                                         Middle East is a crucial step. It is important to
                                         understand product demand and plan your business
                                         goals. Amazon facilitates export of 30+
-                                            product categories that can be exported from
+                                        product categories that can be exported from
                                         India to Singapore.</div>
                                 </div>
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-center flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
@@ -634,8 +634,7 @@
                                 </div>
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                     id="" style="width:100%">
-                                    <div class="align-start"><a
-                                            href="mailto:{{config('app.Admin_email')}}"
+                                    <div class="align-start"><a href="mailto:{{config('app.Admin_email')}}"
                                             class="link  link-type-standard-dark">Know more
                                             about registration</a></div>
                                 </div>
@@ -703,8 +702,7 @@
                                 </div>
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                     id="" style="width:100%">
-                                    <div class="align-start"><a
-                                            href="mailto:{{config('app.Admin_email')}}"
+                                    <div class="align-start"><a href="mailto:{{config('app.Admin_email')}}"
                                             class="link  link-type-standard-dark">Learn how
                                             to list products</a></div>
                                 </div>
@@ -770,13 +768,12 @@
                                         storage, delivery and customer care services. To
                                         help you focus on your business growth, Amazon also
                                         makes international
-                                            shipping and logistics
+                                        shipping and logistics
                                         simple with Amazon SEND. </div>
                                 </div>
                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                     id="" style="width:100%">
-                                    <div class="align-start"><a
-                                            href="mailto:{{config('app.Admin_email')}}"
+                                    <div class="align-start"><a href="mailto:{{config('app.Admin_email')}}"
                                             class="link  link-type-standard-dark">Learn more
                                             about fulfillment</a></div>
                                 </div>
@@ -876,7 +873,7 @@
                 </div>
                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                     id="" style="width:100%">
-                    
+
                 </div>
             </div>
             <div class="tile-wrap background-color-white border-color-white border-radius-8px    padding-left-base padding-right-zero padding-top-base padding-bottom-base border-left-1px border-right-1px border-top-1px border-bottom-1px flex-container flex-align-items-stretch flex-align-content-flex-start amsg-2018 fonts-loaded border-color-white design-Sell hover-scale-up hover-length-fast"
@@ -901,7 +898,7 @@
                 </div>
                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                     id="INAGS_webinar_page" style="width:100%">
-                    
+
                 </div>
             </div><svg alt="" class="wave-placement-bottom " height="354px" preserveaspectratio="none"
                 role="presentation" version="1.1" viewbox="0 0 1440 354" width="1440px"
@@ -994,8 +991,7 @@
                                                         <div class="cta-wrapper first-cta button-spacing-base">
                                                             <p class="top-text color-squid-ink font-size-xsmall">
                                                                 Start Selling
-                                                                Internationally</p><a
-                                                                href="{{route('register')}}"
+                                                                Internationally</p><a href="{{route('register')}}"
                                                                 class="link button button-type-primary font-size-regular "
                                                                 data-ld-append="SDINAGS_SG_faq" aria-label="">Register
                                                                 Now</a>
@@ -1006,8 +1002,7 @@
                                                         <div class="cta-wrapper second-cta">
                                                             <p class="top-text color-squid-ink font-size-xsmall">
                                                                 Already Selling on Amazon?
-                                                            </p><a
-                                                                href="{{route('login')}}"
+                                                            </p><a href="{{route('login')}}"
                                                                 class="link button button-type-secondary-dark font-size-regular "
                                                                 data-ld-append="SDINAGS_SG_faq" aria-label="">Login
                                                                 Now</a>
@@ -1114,8 +1109,7 @@
                 </div>
                 <div class="border-color-squid-ink     padding-left-xsmall padding-right-mini padding-top-mini padding-bottom-xxmini border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                     id="Scroll-1 CTA" style="width:100%">
-                    <div class="align-start"><a
-                            href="{{route('register')}}"
+                    <div class="align-start"><a href="{{route('register')}}"
                             class="link  button button-type-primary font-size-xlarge button-focus-default"
                             target="_blank">Register to Sell</a></div>
                 </div>
@@ -1212,8 +1206,7 @@
                                                 <div class="content">
                                                     <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                                         id="us" style="width:100%">
-                                                        <div class="align-center"><a
-                                                                href="{{route('register')}}"
+                                                        <div class="align-center"><a href="{{route('register')}}"
                                                                 class="link  button button-type-primary font-size-regular button-focus-default"
                                                                 data-ld-append="SDIN_E2_NA">Register
                                                                 to sell</a>
@@ -1240,8 +1233,7 @@
                                                     </div>
                                                     <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                                         id="eu" style="width:100%">
-                                                        <div class="align-center"><a
-                                                                href="{{route('register')}}"
+                                                        <div class="align-center"><a href="{{route('register')}}"
                                                                 class="link  button button-type-primary font-size-regular button-focus-default"
                                                                 data-ld-append="SDIN_E2_EU">Register
                                                                 to sell in Europe</a></div>
@@ -1265,16 +1257,14 @@
                                                 </div>
                                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                                     id="uae" style="width:100%">
-                                                    <div class="align-center"><a
-                                                            href="{{route('register')}}"
+                                                    <div class="align-center"><a href="{{route('register')}}"
                                                             class="link  button button-type-primary font-size-regular button-focus-default"
                                                             data-ld-append="SDIN_E2_MENA">Register
                                                             to sell in UAE</a></div>
                                                 </div>
                                                 <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                                     id="Saudi" style="width:100%">
-                                                    <div class="align-center"><a
-                                                            href="{{route('register')}}"
+                                                    <div class="align-center"><a href="{{route('register')}}"
                                                             class="link  button button-type-primary font-size-regular button-focus-default"
                                                             data-ld-append="SDIN_E2_MENA">Register
                                                             to sell in Saudi Arabia</a>
@@ -1299,24 +1289,21 @@
                                             </div>
                                             <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                                 id="jp" style="width:100%">
-                                                <div class="align-center"><a
-                                                        href="{{route('register')}}"
+                                                <div class="align-center"><a href="{{route('register')}}"
                                                         class="link  button button-type-primary font-size-regular button-focus-default"
                                                         data-ld-append="SDIN_E2_JP">Register</a>
                                                 </div>
                                             </div>
                                             <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                                 id="aus" style="width:100%">
-                                                <div class="align-center"><a
-                                                        href="{{route('register')}}"
+                                                <div class="align-center"><a href="{{route('register')}}"
                                                         class="link  button button-type-primary font-size-regular button-focus-default"
                                                         data-ld-append="SDIN_E2_AU">Register
                                                         to sell in Australia</a></div>
                                             </div>
                                             <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-xsmall border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start flex-full-width amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                                                 id="sg" style="width:100%">
-                                                <div class="align-center"><a
-                                                        href="{{route('register')}}"
+                                                <div class="align-center"><a href="{{route('register')}}"
                                                         class="link  button button-type-primary font-size-regular button-focus-default"
                                                         data-ld-append="SDIN_E2_SG">Register</a>
                                                 </div>

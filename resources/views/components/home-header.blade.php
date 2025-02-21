@@ -8,6 +8,49 @@
                     <span>Get $50,000 in potential benefits.<a href="{{route('register')}}" class="pre-nav-link"
                             id="waiver_nav" data-ld-append="waiver_nav" target="_blank">Register now</a></span>
                 </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="header-top-right">
+                        <div id="google_translate_element"></div>
+
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                        }
+                        </script>
+
+                        <script type="text/javascript"
+                            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                        <style>
+                            #google_translate_element a {
+                                display: none;
+                            }
+
+                            .goog-te-combo {
+                                background-color: #4c4a4a;
+                                /* Dark background */
+                                color: #ffffff;
+                                /* White text for contrast */
+                                border: 1px solid #ffffff;
+                                /* Optional white border */
+                                border-radius: 5px;
+                                padding: 5px;
+                                font-size: 15px;
+                                font-family: 'Poppins', sans-serif;
+                                width: 150px;
+                                /* Adjust width as needed */
+                                box-shadow: 0 2px 5px rgba(50, 50, 50, 0.5);
+                                /* Soft shadow for better visibility */
+                            }
+
+                            /* Optional: Adjust the dropdown hover effect */
+                            .goog-te-combo:hover {
+                                background-color: #565353;
+                            }
+                        </style>
+                    </div>
+                </div>
+
             </div>
             <div class="pre-nav-button-wrap"></div>
             <div class="pre-nav-gutter right"></div>
@@ -30,7 +73,7 @@
                     <li class=" "><a href="{{route('login')}}">login to Sell</a>
                     </li>
                 </ul>
-                <a class="nav-menu-cta link button button-type-primary popup-link" href="{{route('register')}}" >Register</a>
+                <a class="nav-menu-cta link button button-type-primary" href="{{route('register')}}">Register</a>
             </nav>
         </div>
     </div>

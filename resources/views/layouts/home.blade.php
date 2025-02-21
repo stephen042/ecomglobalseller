@@ -328,7 +328,7 @@
                                 </script>
                             </div>
                             <x-home-header />
-                            
+
                             {{-- conten goes here --}}
                             @yield('content')
 
@@ -337,6 +337,8 @@
                         </div>
                     </div>
                     <x-home-script />
+                    {{-- chatway --}}
+                    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=09fTEhjKN73h"></script>
 
 </body>
 
