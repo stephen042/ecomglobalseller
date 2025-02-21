@@ -112,94 +112,75 @@
                     <section class="nav-footer-wrap">
                         <ul>
                             <li class="has-children "><a
-                                    href="https://sell.amazon.in/sell-online?ref_=sdin_f_soasell_">Sell
+                                    href="{{route('register')}}">Sell
                                     online</a>
                                 <ul>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/sell-online/seller-registration-guide?ref_=sdin_f_soa_regguide">How
+                                            href="mailto:{{config('app.Admin_email')}}">How
                                             to register as a seller</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/beginners-guide?ref_=sdin_f_soa_begguide">How
+                                            href="mailto:{{config('app.Admin_email')}}">How
                                             to sell on Amazon</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/fees-and-pricing?ref_=sdin_f_soa_fee">Fee
+                                            href="mailto:{{config('app.Admin_email')}}">Fee
                                             and pricing</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/sell-online/offers-for-sellers?ref_=sdin_f_soa_offers">Offers
+                                            href="mailto:{{config('app.Admin_email')}}">Offers
                                             for sellers</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/brands?ref_=sdin_f_soa_brandowners">Launch
+                                            href="mailto:{{config('app.Admin_email')}}">Launch
                                             your brand</a></li>
                                 </ul>
                             </li>
                             <li class="has-children "><a>For existing sellers</a>
                                 <ul>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/shipping-and-fulfillment/fulfillment-by-amazon?ref_=sdin_f_soa_fba">Fulfillment
+                                            href="mailto:{{config('app.Admin_email')}}">Fulfillment
                                             by Amazon</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/grow-your-business/advertise?ref_=sdin_f_soa_ads">Amazon
+                                            href="mailto:{{config('app.Admin_email')}}">Amazon
                                             Ads</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ref_=sdin_f_soa_ags">Sell
+                                            href="mailto:{{config('app.Admin_email')}}">Sell
                                             globally</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/grow-your-business/programs?ref_=sdin_f_soa_programs">Programs</a>
+                                            href="mailto:{{config('app.Admin_email')}}">Programs</a>
                                     </li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/grow-your-business?ref_=sdin_f_soa_grow">Grow
+                                            href="mailto:{{config('app.Admin_email')}}">Grow
                                             your business</a></li>
                                 </ul>
                             </li>
                             <li class="has-children "><a>Tools</a>
                                 <ul>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/grow-your-business/tools/amazon-seller-central?ref_=sdin_f_soa_sc">Amazon
+                                            href="{{route('login')}}">Amazon
                                             Seller Central</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/grow-your-business/tools/amazon-seller-app?ref_=sdin_f_soa_app">Amazon
+                                            href="{{route('login')}}">Amazon
                                             Seller App</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/grow-your-business/service-provider-network?ref_=sdin_f_soa_spn">Service
+                                            href="/">Service
                                             Provider Network</a></li>
                                 </ul>
                             </li>
                             <li class="has-children "><a>Resources</a>
                                 <ul>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/seller-blog?ref_=sdin_f_soa_blog">Seller
+                                            href="/">Seller
                                             blog</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/seller-blog/a-to-z-gst-guide?ref_=sdin_f_soa_gst">GST
+                                            href="/">GST
                                             guide</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/learn/seller-university?ref_=sdin_f_soa_su">Seller
+                                            href="/">Seller
                                             University</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/seller-success-stories?ref_=sdin_f_soa_success">Success
+                                            href="/">Success
                                             stories</a></li>
                                     <li class=" "><a
-                                            href="https://sell.amazon.in/sell-online/faq?ref_=sdin_f_soa_faq">Seller
+                                            href="/">Seller
                                             FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children "><a>Reach us</a>
-                                <ul>
-                                    <li class=" "><a
-                                            href="https://www.instagram.com/sellersofamazon?tag=SDIN_f_soa_insta">Instagram</a>
-                                    </li>
-                                    <li class=" "><a
-                                            href="https://www.facebook.com/SellOnAmazonIndia?tag=SDIN_f_soa_fb">Facebook</a>
-                                    </li>
-                                    <li class=" "><a
-                                            href="https://www.youtube.com/channel/UCjs5ePs1EZLGhe1T3xw97gQ?tag=SDIN_f_soa_yt">YouTube</a>
-                                    </li>
-                                    <li class=" "><a
-                                            href="https://www.linkedin.com/company/sellonamazon-india/">LinkedIn</a>
-                                    </li>
-                                    <li class=" "><a
-                                            href="https://sell.amazon.in/sell-online/help?ref_=sdin_f_soa_help">Help</a>
-                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -289,52 +270,52 @@
             <div class="has-max-width">
                 <div class="text align-center color-stone font-size-xsmall ember font-normal">
                     <strong>Popular Products to Sell Online<br></strong><a
-                        href="https://sell.amazon.in/sell-online/product-categories/books">Sell
-                        Books Online</a> | <a href="https://sell.amazon.in/seller-blog/sell-art-online">Sell Art
+                        href="{{route('login')}}">Sell
+                        Books Online</a> | <a href="{{route('login')}}">Sell Art
                         Online</a> | <a
-                        href="https://sell.amazon.in/seller-blog/sell-handmade-products-online-on-amazon">Sell
+                        href="{{route('login')}}">Sell
                         Handmade Products Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/clothes">Sell
+                        href="{{route('login')}}">Sell
                         Clothes Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/grocery">Sell
+                        href="{{route('login')}}">Sell
                         Grocery Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/home-products">Sell
+                        href="{{route('login')}}">Sell
                         Home Products Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/beauty-products">Sell
+                        href="{{route('login')}}">Sell
                         Beauty Products Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/watches">Sell
+                        href="{{route('login')}}">Sell
                         Watches Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/kitchenware">Sell
+                        href="{{route('login')}}">Sell
                         Kitchenware Products Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/tea">Sell
-                        Tea Online</a> | <a href="https://sell.amazon.in/sell-online/product-categories/furniture">Sell
+                        href="{{route('login')}}">Sell
+                        Tea Online</a> | <a href="{{route('login')}}">Sell
                         Furniture Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/headphones">Sell
+                        href="{{route('login')}}">Sell
                         Headphones Online</a> | <a
-                        href="https://sell.amazon.in/sell-online/product-categories/toys">Sell
-                        Toys Online</a> | <a href="https://sell.amazon.in/sell-online/product-categories/shoes">Sell
+                        href="{{route('login')}}">Sell
+                        Toys Online</a> | <a href="{{route('login')}}">Sell
                         Shoes Online</a><br><br><strong>Blogs for Online
                         Sellers<br></strong><a
-                        href="https://sell.amazon.in/seller-blog/pocket-friendly-ideas-for-online-business">6
+                        href="{{route('login')}}">6
                         Budget Friendly Business Ideas to Start your Online Business</a> |
                     <a
-                        href="https://sell.amazon.in/seller-blog/things-to-keep-in-mind-while-starting-an-online-business">Starting
+                        href="{{route('login')}}">Starting
                         an Online Business in India - Things you may Keep in Mind</a> | <a
-                        href="https://sell.amazon.in/seller-blog/what-is-ecommerce">What is
-                        Ecommerce?</a> | <a href="https://sell.amazon.in/seller-blog/start-your-e-commerce-business">How
+                        href="{{route('login')}}">What is
+                        Ecommerce?</a> | <a href="{{route('login')}}">How
                         to Start your E-commerce Business</a> | <a
-                        href="https://sell.amazon.in/seller-blog/benefits-of-starting-your-e-commerce-business">Benefits
+                        href="{{route('login')}}">Benefits
                         of Starting an E-commerce Business</a> | <a
-                        href="https://sell.amazon.in/seller-blog/amazon-business-ideas">Amazon
+                        href="{{route('login')}}">Amazon
                         Online Business Ideas</a> | <a
-                        href="https://sell.amazon.in/seller-blog/business-ideas-for-women">Empowering
+                        href="{{route('login')}}">Empowering
                         Entrepreneurship: Business Ideas for Women</a> | <a
-                        href="https://sell.amazon.in/seller-blog/starting-an-ecommerce-business-with-minimal-investment">How
+                        href="{{route('login')}}">How
                         to start an E-commerce Business in India with Minimal
                         Investments!</a> | <a
-                        href="https://sell.amazon.in/seller-blog/best-ideas-for-starting-a-side-business-in-india-and-earn-the-extra-money">Building
+                        href="{{route('login')}}">Building
                         Side Business Ideas to Earn Money</a> | <a
-                        href="https://sell.amazon.in/seller-blog/how-to-start-your-own-business">How
+                        href="{{route('login')}}">How
                         to start your own Business</a>
                 </div>
             </div>
@@ -373,20 +354,14 @@
                         id="" style="width:100%">
                         <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                             id="" style="width:25%">
-                            <div class="align-center"><a href="/sitemap"
+                            <div class="align-center"><a href="/"
                                     class="link  link-type-plain-text-mid">Sitemap</a></div>
                         </div>
                         <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                             id="" style="width:25%">
-                            <div class="align-center"><a href="/standards/confidentiality-policy"
+                            <div class="align-center"><a href="mailto:{{config('app.Admin_email')}}"
                                     class="link  link-type-plain-text-mid">Confidentiality
                                     Policy</a></div>
-                        </div>
-                        <div class="border-color-squid-ink     padding-left-xmini padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
-                            id="" style="width:25%">
-                            <div class="align-center"><a href="/standards/terms-of-use"
-                                    class="link  link-type-plain-text-mid">Terms of Use</a>
-                            </div>
                         </div>
                         <div class="border-color-squid-ink     padding-left-zero padding-right-zero padding-top-zero padding-bottom-zero border-left-zero border-right-zero border-top-zero border-bottom-zero flex-container flex-align-items-stretch flex-align-content-flex-start amsg-2018 fonts-loaded border-color-squid-ink design-Sell"
                             id="" style="width:25%">
