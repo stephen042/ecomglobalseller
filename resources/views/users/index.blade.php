@@ -52,49 +52,66 @@
                     <div class="card-body">
                         {{-- <h5 class="card-title">Monthly Sales Chart</h5> --}}
 
-                        <!-- Bar Chart -->
-                        <canvas id="barChart" style="width: 100%; height: auto; max-height: 300px;"></canvas>
+                        {{-- // In your Blade template --}}
+                        <canvas id="weeklyChart" style="width: 100%; height: auto; min-height: 300px;"></canvas>
                         <script>
                             document.addEventListener("DOMContentLoaded", () => {
-                                // Monthly sales data passed from Laravel
-                                let salesData = @json($salesData); // Example: [5000, 7000, 0, 8000, ...]
-            
-                                // Shortened month labels
-                                let monthLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-            
-                                // Initialize the chart
-                                new Chart(document.querySelector('#barChart'), {
+                                let salesData = @json($salesData);
+                                let weekLabels = @json($weekLabels);
+
+                                new Chart(document.querySelector('#weeklyChart'), {
                                     type: 'bar',
                                     data: {
-                                        labels: monthLabels,
+                                        labels: weekLabels,
                                         datasets: [{
-                                            label: 'Monthly Sales',
+                                            label: 'Weekly Sales',
                                             data: salesData,
                                             backgroundColor: '#FF9B05',
                                             borderColor: '#0000',
-                                            borderWidth: 1
+                                            borderWidth: 1,
+                                            barPercentage: 0.3, // Slim bars
+                                            categoryPercentage: 0.5 // Adjust spacing
                                         }]
                                     },
                                     options: {
                                         responsive: true,
-                                        maintainAspectRatio: false, // Allow height adjustment
+                                        maintainAspectRatio: false,
                                         scales: {
+                                            x: {
+                                                grid: {
+                                                    display: false // Hide vertical grid lines
+                                                },
+                                                ticks: {
+                                                    autoSkip: false
+                                                }
+                                            },
                                             y: {
                                                 beginAtZero: true,
-                                                min: 0,
-                                                max: Math.max(...salesData) + 1000, // Dynamic max value
+                                                grid: {
+                                                    drawBorder: false, // Optional: Hide axis border
+                                                    color: "rgba(0, 0, 0, 0.1)" // Light grey for horizontal lines
+                                                },
                                                 ticks: {
                                                     callback: function(value) {
-                                                        return value >= 1000 ? (value / 1000).toFixed(1) + 'K' : value; // Format large numbers as 'K'
+                                                        return value >= 1000 ? (value / 1000).toFixed(1) + 'K' : value;
                                                     }
                                                 }
                                             }
                                         }
                                     }
+
                                 });
                             });
                         </script>
-                        <!-- End Bar Chart -->
+
+                        <style>
+                            @media (max-width: 768px) {
+                                #weeklyChart {
+                                    height: 400px !important;
+                                }
+                            }
+                        </style>
+
                     </div>
                 </div>
             </div>
@@ -132,7 +149,7 @@
                                         data-bs-target="#viewSellingApplications">
                                         <li class="list-group-item d-flex flex-row justify-content-between  p-3 rounded-1"
                                             style="border-bottom: 1px solid grey">
-                                            <div class="text-dark" ><i class="bi bi-eye-fill mx-2"></i> View Selling
+                                            <div class="text-dark"><i class="bi bi-eye-fill mx-2"></i> View Selling
                                                 Applications</div>
                                             <div><i class="bi bi-chevron-right text-dark"></i></div>
                                         </li>
@@ -146,8 +163,8 @@
                                             <div><i class="bi bi-chevron-right text-dark"></i></div>
                                         </li>
                                     </a>
-                                    <a  href="javascript:void(0);" data-bs-toggle="modal"
-                                    data-bs-target="#manageReturns">
+                                    <a href="javascript:void(0);" data-bs-toggle="modal"
+                                        data-bs-target="#manageReturns">
                                         <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
                                             style="border-bottom: 1px solid grey">
                                             <div class="text-dark"> <i class="bi bi-bag-dash-fill mx-2"></i> Manage
@@ -197,7 +214,8 @@
         </div>
     </div>
 </section>
-{{-- <livewire:user.fund-modal /> --}}
+{{--
+<livewire:user.fund-modal /> --}}
 
 <div class="modal fade" id="viewSellingApplications" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">

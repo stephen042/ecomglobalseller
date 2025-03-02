@@ -10,39 +10,75 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     public function index() {
-        $user = Auth::user(); // Get the logged-in user
+        $user = Auth::user();
+    
+        // Get first sale date for the user
+        $firstSale = DB::table('add_products')
+            ->where('user_id', $user->id)
+            ->where('soldInStock', 2)
+            ->where('status', 2)
+            ->orderBy('updated_at', 'asc')
+            ->value('updated_at');
+    
+        $salesData = [];
+        $weekLabels = [];
+    
+        if ($firstSale) {
+            $firstSaleDate = Carbon::parse($firstSale)->startOfWeek();
+            $currentDate = Carbon::now()->endOfWeek();
+    
+            // Fetch weekly sales data
+            $weeklySales = DB::table('add_products')
+                ->select(
+                    DB::raw("YEARWEEK(updated_at, 1) as week"), // ISO week format
+                    DB::raw("SUM(price * productQuantity) as total_sales")
+                )
+                ->where('user_id', $user->id)
+                ->where('soldInStock', 2)
+                ->where('status', 2)
+                ->whereBetween('updated_at', [$firstSaleDate, $currentDate])
+                ->groupBy('week')
+                ->get();
+    
+                // Prepare chart data (limit to last 5 weeks dynamically)
+                $weeklyData = collect($weeklySales)->map(function ($sale) {
+                    if (!is_object($sale) || empty($sale->week)) {
+                        return null; // Skip invalid data
+                    }
 
-        $currentYear = Carbon::now()->year;
+                    $weekString = (string) $sale->week;
+                    
+                    if (strlen($weekString) < 6) {
+                        return null; // Ensure correct format
+                    }
+
+                    $year = substr($weekString, 0, 4);
+                    $weekNumber = substr($weekString, 4, 2);
+
+                    return [
+                        'week' => Carbon::now()->setISODate((int) $year, (int) $weekNumber)->startOfWeek()->format('M d'),
+                        'sales' => (float) $sale->total_sales,
+                    ];
+                })->filter()->slice(-5); // Remove nulls and limit to last 5 weeks
+
     
-        // Query to calculate monthly sales for the current year
-        $monthlySales = DB::table('add_products')
-            ->select(
-                DB::raw("DATE_FORMAT(updated_at, '%Y-%m') as month"),
-                DB::raw("SUM(price * productQuantity) as total_sales")
-            )
-            ->where('user_id', $user->id) // Only consider the current user's products
-            ->where('soldInStock', 2) // Only sold-out products
-            ->where('status', 2) // Only accepted products
-            ->whereYear('updated_at', $currentYear) // Filter by the current year
-            ->groupBy(DB::raw("DATE_FORMAT(updated_at, '%Y-%m')"))
-            ->get();
-    
-        // Initialize sales data for each month of the current year
-        $salesData = array_fill(0, 12, 0); // [0, 0, 0, ..., 0] for January to December
-    
-        // Populate the sales data array
-        foreach ($monthlySales as $sale) {
-            $monthIndex = (int) Carbon::parse($sale->month)->format('m') - 1; // Convert month to index (0-11)
-            $salesData[$monthIndex] = (float) $sale->total_sales;
+            foreach ($weeklyData as $data) {
+                $weekLabels[] = $data['week'];
+                $salesData[] = $data['sales'];
+            }
         }
     
-        // Pass the calculated sales data to the view
         return view('users.index', [
             'salesData' => $salesData,
-            'countrySvg' => str_replace(' ', '', $user->country) // Removing whitespace for SVG mapping
+            'weekLabels' => $weekLabels,
+            'countrySvg' => str_replace(' ', '', $user->country)
         ]);
     }
-       
+    
+    
+    
+    
+    
     public function pin() {
         return view('users.pin');
     }
