@@ -12,7 +12,7 @@
             <div class="row mb-3">
                 <label for="inputNumber" class="col-sm-2 col-form-label">Upload Photos of Product :</label>
                 <div class="col-sm-10">
-                    <input type="file" id="photos" wire:model="photos" multiple class="form-control">
+                    <input type="file" id="photos" wire:model="photos" multiple class="form-control" wire:ignore>
                     @error('photos.*')
                     <em class="text-danger">{{ $message }}</em>
                     @enderror

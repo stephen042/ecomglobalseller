@@ -34,9 +34,9 @@ class AddAProduct extends Component
         $photoPaths = [];
 
         foreach ($this->photos as $photo) {
-            $photoPath = $photo->store('addproduct', 'public');
+            $photoPath = $photo->storeAs('addproduct', time() . '_' . $photo->getClientOriginalName(), 'public');
             $photoPaths[] = $photoPath;
-        }
+        }        
         $user = Auth::user();
 
         // Save to database
@@ -55,7 +55,6 @@ class AddAProduct extends Component
         if ($result) {
 
             session()->flash('success', 'Product added successfully!');
-            $this->reset();
             $this->reset();
             return redirect('/users/add-product')->with('wire:navigate', true);
         }

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="m-3">
-    <button class="btn btn-primary mb-2" onclick="window.location.href='{{ route('dashboard')}}'">
+    <button class="btn btn-primary" onclick="window.location.href='{{ route('dashboard')}}'">
         <i class="bi bi-house"></i>
         Back
     </button>
