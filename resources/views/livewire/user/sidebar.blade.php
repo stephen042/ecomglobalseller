@@ -3,7 +3,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
         
         <li class="nav-item">
-            <a class="nav-link" href="/users" wire:navigate>
+            <a class="nav-link collapsed" href="/users" wire:navigate>
                 <i class="bi bi-house"></i>
                 <span>Home</span>
             </a>
