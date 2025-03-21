@@ -3,7 +3,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
         
         <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('dashboard') ? '' : 'collapsed' }}" href="{{route('dashboard')}}" wire:navigate disabled>
+            <a class="nav-link {{ request()->routeIs('dashboard') ? '' : 'collapsed' }}" href="{{route('dashboard')}}" wire:navigate>
                 <i class="bi bi-house"></i>
                 <span>Home</span>
             </a>
