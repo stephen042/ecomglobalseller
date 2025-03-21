@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="m-3">
-    <button class="btn btn-primary" onclick="window.location.href='{{ route('dashboard')}}'">
+    <a class="btn btn-primary" href="{{ route('dashboard') }}">
         <i class="bi bi-house"></i>
         Back
-    </button>
+    </a>
     <x-error-message />
     <section class="section">
         <div class="row">
