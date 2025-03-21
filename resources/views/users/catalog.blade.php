@@ -1,11 +1,11 @@
 @extends('layouts.users')
 
 @section('content')
+<a class="btn btn-primary" href="{{ route('dashboard') }}">
+    <i class="bi bi-house"></i>
+    Back
+</a>
 <div class="m-3">
-    <a class="btn btn-primary" href="{{ route('dashboard') }}">
-        <i class="bi bi-house"></i>
-        Back
-    </a>
     <x-error-message />
     <section class="section">
         <div class="row">
