@@ -2,10 +2,21 @@
 
 
 @section('content')
-<main id="main" class="">
+<main>
 
     <div id="content" class="blog-wrapper blog-single page-wrapper">
 
+
+        <!-- Logo -->
+        <center>
+            <div>
+                <!-- Header logo -->
+                <a href="/" title="Ecomglobalseller - Your eCom Partner" rel="home">
+                    <img width="250" height="57" alt="Ecomglobalseller"
+                        src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}">
+                </a>
+            </div>
+        </center>
 
         <div class="row row-large row-divided ">
 

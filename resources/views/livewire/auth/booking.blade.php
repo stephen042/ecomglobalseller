@@ -1,5 +1,5 @@
-<div>
-    <form wire:submit="save" style="font-size: 20px">
+<div >
+    <form wire:submit.prevent="save" style="font-size: 20px">
 
         <p class="comment-form-author">
             <label for="author">Name <span class="required" aria-hidden="true">*</span></label>
@@ -366,9 +366,14 @@
         </p>
 
         <p class="form-submit">
-            <button class="login100-form-btn text-white" type="submit">
-                Done
-                <x-spinner />
+            <button wire:loading.attr="disabled" 
+                    wire:target="save"
+                    class="login100-form-btn text-white btn btn-primary" 
+                    type="submit">
+                <span wire:loading.remove wire:target="save">Done</span>
+                <span wire:loading wire:target="save">
+                    <x-spinner size="sm" />
+                </span>
             </button>
         </p>
     </form>
