@@ -11,7 +11,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('homeAssets/wp-content/uploads/2021/02/BeginnersFba.png') }}" rel="shortcut icon"
+    <link href="{{asset('homeAssets/images/G/01/sell/images/favicon.ico')}}" rel="shortcut icon"
         type="image/x-icon">
 
     <!-- Google Fonts -->

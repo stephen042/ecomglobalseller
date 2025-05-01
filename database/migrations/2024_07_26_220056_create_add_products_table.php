@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->text('productName');
-            $table->text('photos')->nullable();
+            $table->json('photos')->nullable();
             $table->integer('productQuantity');
             $table->longText('productDescription');
             $table->integer('price');
