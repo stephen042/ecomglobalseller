@@ -66,7 +66,7 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center" style="height: 200px">
-                <span class="d-none d-lg-block">Ecomglobalseller</span>
+                <span class="d-none d-lg-block">Aidigitalglobalmarketing</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
             <li class="nav-item d-flex align-items-center ms-5">
