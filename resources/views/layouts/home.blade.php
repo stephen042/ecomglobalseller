@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="xmlrpc.php">
-    <link href="{{ asset('homeAssets/wp-content/uploads/2021/02/BeginnersFba.png') }}" rel="shortcut icon"
+    <link href="{{ asset('homeAssets/images/favicon.png') }}" rel="shortcut icon"
         type="image/x-icon">
 
     <script>
@@ -28,10 +28,10 @@
     <meta property="og:url" content="https://Aidigitalglobalmarketing.live/">
     <meta property="og:site_name" content="Aidigitalglobalmarketing">
     <meta property="article:modified_time" content="2023-10-09T04:54:58+00:00">
-    <meta property="og:image" content="{{asset('homeAssets/wp-content/uploads/2021/02/BeginnersFba-2.png')}}">
+    <meta property="og:image" content="{{asset('homeAssets/images/logo.png')}}">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
-    <meta property="og:image:type" content="{{asset('homeAssets/image/png')}}">
+    <meta property="og:image:type" content="{{asset('homeAssets/images/favicon.png')}}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:label1" content="Est. reading time">
     <meta name="twitter:data1" content="7 minutes">

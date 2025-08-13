@@ -3,67 +3,7 @@
 @section('content')
 {{-- <main id="main" class="" style="padding-top:100px; display: block !important;"> --}}
     <div id="content" role="main">
-        <h1 data-padding="5px"></h1>
-
-        <div style="text-align: center;padding: 15px 0px;">
-            <style>
-                #google_translate_element {
-
-                    color: transparent;
-                }
-
-                /* #google_translate_element a {
-
-                    display: none;
-                } */
-
-                select.google_translate_element {
-
-                    color: black;
-                }
-
-                div.goog-te-gadget {
-
-                    color: transparent;
-                }
-
-                div.goog-te-gadget {
-
-                    color: transparent !important;
-                }
-
-                .goog-te-gadget .goog-te-combo {
-
-                    margin: 0px 0 !important;
-                    padding: 0px 10px;
-                    font-size: 15px;
-                    font-weight: 500;
-                    background: rgba(0, 0, 0, 0.9);
-                    background-size: 300% 100%;
-                    border: 1px solid #fff;
-                    color: #52afee !important;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    outline: none;
-                    font-family: 'Poppins', sans-serif;
-                    border-radius: 5px;
-                    box-shadow: 0px 3px 5px #fff;
-                    height: 30px;
-                    display: inline-block;
-                    position: relative;
-                    /* top: 6px; */
-                    width: 100px;
-                }
-            </style>
-            {{-- <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
-                }
-            </script> --}}
-            {{-- <script type="text/javascript" src="homeAssets/translate_a/element.js?cb=googleTranslateElementInit">
-            </script>
-            <div id="google_translate_element"></div> --}}
-        </div>
+        <hr>
         <h1 style="text-align: center;" data-padding="5px"><strong> eCommerce
                 Management</strong></h1>
         <h4 class="thin-font" style="text-align: center;" data-padding="5px">Your Brand, Our Responsibility</h4>

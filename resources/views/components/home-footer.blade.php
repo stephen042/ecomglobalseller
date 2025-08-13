@@ -46,10 +46,10 @@
                         style="max-width: 100% !important; width: 128.03921568627px !important;">
                         <div class="ux-logo-link block image-" title="" href="#" style="padding: 15px;">
                             <img title="" alt="" style="height: 20px;"
-                                data-src="homeAssets/wp-content/uploads/2020/12/BeginnersFba-1.png"
+                                data-src="homeAssets/images/logo.png"
                                 class="ux-logo-image block lazyload"
                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                            <noscript><img src="homeAssets/wp-content/uploads/2020/12/BeginnersFba-1.png" title="" alt=""
+                            <noscript><img src="homeAssets/images/logo.png" title="" alt=""
                                     class="ux-logo-image block" style="height: 20px;"></noscript>
                         </div>
                     </div>

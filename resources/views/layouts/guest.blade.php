@@ -974,7 +974,7 @@
         </div>
     </div>
     <!-- live chat -->
-    <script src="//code.jivosite.com/widget/NInO2bgwq9" async></script>
+    {{-- <script src="//code.jivosite.com/widget/NInO2bgwq9" async></script> --}}
 </body>
 
 </html>

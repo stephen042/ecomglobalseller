@@ -1,4 +1,16 @@
 <div>
+    <style>
+        #header-logo-dark {
+            padding-top: 10px !important;
+            padding-bottom: 50px !important;
+        }
+        @media (max-width: 767px) {
+            #header-logo-dark {
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+            }
+        }
+    </style>
     <header id="header" class="header  header-full-width has-sticky sticky-fade sticky-hide-on-scroll">
         <div class="header-wrapper">
             <div id="masthead" class="header-main show-logo-center hide-for-sticky nav-dark">
@@ -8,16 +20,16 @@
                         <!-- Header logo -->
                         <a href="/" title="Aidigitalglobalmarketing - Your eCom Partner" rel="home">
                             <img width="250" height="57" alt="Aidigitalglobalmarketing"
-                                data-src="homeAssets/wp-content/uploads/2021/02/BeginnersFba.png"
+                                data-src="homeAssets/images/logo.png"
                                 class="header_logo header-logo lazyload"
                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                             <noscript><img width="250" height="57" src="wp-content/uploads/2021/02/BeginnersFba.png"
                                     class="header_logo header-logo" alt="BeginnersFba"></noscript>
                             <img width="250" height="57" alt="BeginnersFba"
-                                data-src="homeAssets/wp-content/uploads/2021/02/BeginnersFba.png"
+                                data-src="homeAssets/images/logo.png"
+                                id="header-logo-dark"
                                 class="header-logo-dark ls-is-cached lazyloaded"
-                                src="homeAssets/wp-content/uploads/2021/02/BeginnersFba.png"
-                                style="padding-top: 10px;padding-bottom: 5px;">
+                                src="homeAssets/images/logo.png">
                             <noscript><img width="250" height="57" src="wp-content/uploads/2021/02/BeginnersFba.png"
                                     class="header-logo-dark" alt="BeginnersFba"></noscript>
                         </a>
@@ -91,5 +103,5 @@
             </div>
         </div>
     </header>
-    <hr>
+    {{-- <br> --}}
 </div>

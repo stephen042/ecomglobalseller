@@ -11,7 +11,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{asset('homeAssets/images/G/01/sell/images/favicon.ico')}}" rel="shortcut icon"
+    <link href="{{asset('hhomeAssets/images/favicon.png')}}" rel="shortcut icon"
         type="image/x-icon">
 
     <!-- Google Fonts -->
@@ -66,7 +66,7 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center" style="height: 200px">
-                <span class="d-none d-lg-block">Aidigitalglobalmarketing</span>
+                <span class="d-none d-lg-block">DASHBOARD</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
             <li class="nav-item d-flex align-items-center ms-5">
@@ -155,7 +155,7 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- live chat -->
-    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=09fTEhjKN73h"></script>
+    {{-- <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=09fTEhjKN73h"></script> --}}
 
     <!-- Vendor JS Files -->
     <script src="{{ URL('assets/vendor/apexcharts/apexcharts.min.js') }}"></script>

@@ -13,7 +13,7 @@
                 <!-- Header logo -->
                 <a href="/" title="Ecomglobalseller - Your eCom Partner" rel="home">
                     <img width="250" height="57" alt="Ecomglobalseller"
-                        src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}">
+                        src="{{asset('homeAssets/images/logo.png')}}">
                 </a>
             </div>
         </center>

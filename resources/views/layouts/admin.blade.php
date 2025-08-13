@@ -11,7 +11,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('homeAssets/wp-content/uploads/2021/02/BeginnersFba.png') }}" rel="shortcut icon"
+    <link href="{{ asset('homeAssets/images/favicon.png') }}" rel="shortcut icon"
         type="image/x-icon">
 
     <!-- Google Fonts -->
@@ -51,7 +51,7 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center" style="height: 200px">
-                <span class="d-none d-lg-block">Admin Aidigitalglobalmarketing</span>
+                <span class="d-none d-lg-block">Admin</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -63,7 +63,7 @@
                 <li class="nav-item dropdown pe-3">
 
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="{{ URL('homeAssets/wp-content/uploads/2021/02/BeginnersFba.png') }}" alt="Profile"
+                        <img src="{{ URL('homeAssets/images/logo.png') }}" alt="Profile"
                             class="">
                         <i class="bi bi-chevron-down ms-2 pt-3"></i>
                     </a><!-- End Profile Iamge Icon -->

@@ -14,7 +14,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="homeAssets/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link href="{{asset('homeAssets/images/G/01/sell/images/favicon.ico')}}" rel="shortcut icon"
+  <link href="{{asset('homeAssets/images/favicon.png')}}" rel="shortcut icon"
     type="image/x-icon">
   <style>
     @import url("css2");
@@ -153,7 +153,7 @@
       <div class="login-text">
         <div class="logo">
           <a href="/">
-            <img src="{{asset('homeAssets/images/G/65/logo/Amazon_Global_Selling_Logo.png')}}" style="width:250px">
+            <img src="{{asset('homeAssets/images/logo.png')}}" style="width:250px">
           </a>
 
           <div>
@@ -255,7 +255,7 @@
       </div>
     </div>
   </div>
-  <script src="//code.jivosite.com/widget/NInO2bgwq9" async></script>
+  {{-- <script src="//code.jivosite.com/widget/NInO2bgwq9" async></script> --}}
 </body>
 
 </html>
