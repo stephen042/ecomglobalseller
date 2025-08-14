@@ -185,7 +185,7 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
-    'Admin_email' => 'support@ecomglobalseller.live',
+    'Admin_email' => 'support@aidigitalglobalmarketing.live',
     'booking_status' => [1 => 'Accept', 2 => 'Accepted'],
     'deposit_status' => [1 => 'Pending',2 => 'Completed', 3 => 'Denied'],
     'add_product_status' => [1 => 'Pending',2 => 'Accepted', 3 => 'Denied'],
