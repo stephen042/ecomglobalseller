@@ -11,7 +11,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{asset('hhomeAssets/images/favicon.png')}}" rel="shortcut icon"
+    <link href="{{asset('homeAssets/images/favicon.png')}}" rel="shortcut icon"
         type="image/x-icon">
 
     <!-- Google Fonts -->

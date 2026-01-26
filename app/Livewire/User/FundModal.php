@@ -6,15 +6,25 @@ use App\Jobs\SendMail;
 use App\Models\Deposit;
 use Livewire\Component;
 use App\Models\AdminWallet;
+use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
 
 class FundModal extends Component
 {
-    
+    use WithFileUploads;
+
     public $amount;
     protected $rules = [
         'amount' => ['required', 'numeric', 'min:100'],
     ];
+
+    public $proof;
+    protected $profRules = [
+        'amount' => ['required', 'numeric', 'min:100'],
+        'payment_method' => ['required'],
+        'proof' => ['required', 'image', 'max:2048'], // 2MB
+    ];
+
 
     public $payment_method;
 
@@ -43,7 +53,7 @@ class FundModal extends Component
         } elseif ($this->payment_method == "PayPal") {
             $this->copyAddress = $this->admin_wallets->pay_pal ?? "wallet address not available. Contact us ";
             return $this->display = "";
-        }elseif ($this->payment_method == "Cash App") {
+        } elseif ($this->payment_method == "Cash App") {
             $this->copyAddress = $this->admin_wallets->cash_app ?? "wallet address not available. Contact us ";
             return $this->display = "";
         } elseif ($this->payment_method == "Ethereum") {
@@ -62,58 +72,64 @@ class FundModal extends Component
 
     public function fund()
     {
-        if ($this->payment_method == "GiftCard") {
-            // Save the amount to the session
-            session(['amount' => $this->amount]);
+        $this->validate();
 
-            // Redirect to the giftcard route
+        if ($this->payment_method == "GiftCard") {
+            session(['amount' => $this->amount]);
             return redirect()->route('giftcard')->with('wire:navigate', true);
         }
-        
+
+        // Store Image
+        $imageName = time() . '_' . $this->proof->getClientOriginalName();
+        $path = $this->proof->storeAs(
+            'deposits',
+            $imageName,
+            'public'
+        );
+
         $user = Auth::user();
 
         $result = Deposit::create([
             "user_id" => $user->id,
             "amount" => $this->amount,
             "payment_method" => $this->payment_method,
+            "proof_image" => $path,
             "status" => 1
         ]);
 
         if ($result) {
+
             $app = config('app.name');
             $userEmail = $user->email;
-
             $name = $user->name;
             $subject = "Deposit Request Notification";
-
 
             $bodyUser = [
                 "name" => $name,
                 "title" => "Deposit Request Notification",
-                "message" => "We have successfully received your deposit request of $$this->amount through $this->payment_method, Your account will be credited after confirmation .
-                <br>
-                <br>
-                We will get back to you with further details soon. ",
+                "message" => "We received your deposit request of $$this->amount via $this->payment_method.
+            <br><br>
+            Your account will be credited after confirmation.",
             ];
+
             $bodyAdmin = [
                 "name" => "Admin",
                 "title" => "Deposit Request Notification",
-                "message" => " Hello Admin a User by the name $name have successfully made a Deposit Request of $$this->amount through $this->payment_method on your $app . Please check it out ;
-                ",
+                "message" => "User $name submitted a deposit request of $$this->amount via $this->payment_method.
+            Please review the proof of payment.",
             ];
 
-            SendMail::dispatch($userEmail,$subject, $bodyUser ,$bodyAdmin);
+            SendMail::dispatch($userEmail, $subject, $bodyUser, $bodyAdmin);
 
-            session()->flash('success', 'Deposit request Created Successfully. Check Your email for more information');
-            
+            session()->flash('success', 'Deposit request created successfully');
+
             $this->reset();
 
             return redirect('/users')->with('wire:navigate', true);
         }
 
-        session()->flash('error', 'An error occurred please try again');
+        session()->flash('error', 'Something went wrong');
         return redirect('/users')->with('wire:navigate', true);
-
     }
 
     public function render()

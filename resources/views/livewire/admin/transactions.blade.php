@@ -10,6 +10,7 @@
                             <th scope="col">Date</th>
                             <th scope="col">Amount</th>
                             <th scope="col">Payment Method</th>
+                            <th scope="col">Proof of Payment</th>
                             <th scope="col">Gift Card Images</th>
                             <th scope="col">status</th>
                             <th scope="col">Action</dth>
@@ -22,6 +23,11 @@
                             <td>{{ date("Y M d", strtotime($deposit->created_at))}}</td>
                             <td>${{number_format($deposit->amount)}}</td>
                             <td>{{$deposit->payment_method}}</td>
+                            <td>
+                                <a href="{{URL('storage/'.$deposit->proof_image)}}" target="blank"><span
+                                        class="badge rounded-pill bg-primary"><i class="ri-eye-line"></i>
+                                        View</span></a>
+                            </td>
                             <td>
                                 @if ($deposit->payment_method == "Gift Card")
                                 <a href="{{asset('storage/'.$deposit->gift_card_front)}}" target="blank"><span
