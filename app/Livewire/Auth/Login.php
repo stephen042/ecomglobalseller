@@ -16,7 +16,7 @@ class Login extends Component
     {
         // Validate input
         $validatedData = $this->validate([
-            'email' => ['required', 'email'],
+            'email' => ['required'],
             'password' => ['required'],
         ]);
 
