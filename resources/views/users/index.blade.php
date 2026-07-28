@@ -176,7 +176,7 @@
                                         <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
                                             style="border-bottom: 1px solid grey">
                                             <div class="text-dark"><i class="bi bi-chat-left-fill mx-2"></i> Manage
-                                                Casalogs</div>
+                                                Catalogs</div>
                                             <div><i class="bi bi-chevron-right text-dark"></i></div>
                                         </li>
                                     </a>

@@ -147,6 +147,7 @@
                 </div>
             </div>
             <livewire:admin.upload-product :add_products="$add_products" :user="$user" />
+            <livewire:admin.k-y-c :add_products="$add_products" :user="$user" />
         </div>
     </div>
 </section>

@@ -53,7 +53,7 @@
         <div class="text-center">
             <button type="reset" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Reset</button>
             <button type="submit" class="btn btn-primary btn-sm px-4">
-                Upload
+                Promote
                 <x-spinner />
             </button>
         </div>

@@ -1,14 +1,11 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 use App\Models\User;
-use App\Jobs\SendMail;
-use App\Models\Deposit;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,8 +58,8 @@ Route::prefix('users')->group(function () {
 
             $add_products = $user->addproducts()->orderByRaw('created_at desc')->get();
 
-            return view('users.add-product',[
-                "add_products" => $add_products,
+            return view('users.add-product', [
+                'add_products' => $add_products,
             ]);
         })->name('add_product');
 
@@ -75,19 +72,19 @@ Route::prefix('users')->group(function () {
 
             $user = User::findOrFail($user_data->id);
 
-            $add_products = $user->addproducts()->where("status", 2)->orderByRaw('created_at desc')->Paginate(3);
+            $add_products = $user->addproducts()->where('status', 2)->orderByRaw('created_at desc')->Paginate(3);
 
-            return view('users.catalog',[
-                "catalogs" => $add_products,
+            return view('users.catalog', [
+                'catalogs' => $add_products,
             ]);
         })->name('catalog');
 
-
         Route::get('/giftcard', function () {
 
-            if (!session()->has('amount')) {
+            if (! session()->has('amount')) {
                 return redirect()->route('dashboard');
             }
+
             return view('users.giftcard');
         })->name('giftcard');
 
@@ -115,20 +112,27 @@ Route::prefix('users')->group(function () {
             ]);
         })->name('withdrawal');
 
-        Route::get('/pin',[UserController::class, 'pin'])->name('pin');
+        Route::get('/pin', [UserController::class, 'pin'])->name('pin');
+
+        // View profile
+        Route::get('/profile', [UserController::class, 'profile'])->name('user.profile');
+
+        // Form handlers
+        Route::put('/profile/update', [UserController::class, 'updateProfile'])->name('user.profile.update');
+        Route::put('/profile/password', [UserController::class, 'updatePassword'])->name('user.password.update');
+        Route::post('/profile/documents', [UserController::class, 'uploadDocuments'])->name('user.documents.upload');
     });
 });
 
-
-//Admin Routes
+// Admin Routes
 Route::prefix('admin')->group(function () {
     Route::middleware(['auth', 'admin'])->group(function () {
 
-        Route::get('/',[AdminController::class, 'admin'])->name('admin_dashboard');
-        Route::get('/edit-user/{user}',[AdminController::class, 'editUser'])->name('admin_editUser');
-        Route::get('/edit-user/{user}/{addproduct}',[AdminController::class, 'viewProducts'])->name('admin_viewproducts');
-        Route::get('/bookings',[AdminController::class, 'bookings'])->name('admin_bookings');
-        Route::get('/bookings/{booking}',[AdminController::class, 'bookings_view'])->name('admin_bookings_view');
-        Route::get('/admin-wallet',[AdminController::class, 'admin_wallet'])->name('admin_wallet');
+        Route::get('/', [AdminController::class, 'admin'])->name('admin_dashboard');
+        Route::get('/edit-user/{user}', [AdminController::class, 'editUser'])->name('admin_editUser');
+        Route::get('/edit-user/{user}/{addproduct}', [AdminController::class, 'viewProducts'])->name('admin_viewproducts');
+        Route::get('/bookings', [AdminController::class, 'bookings'])->name('admin_bookings');
+        Route::get('/bookings/{booking}', [AdminController::class, 'bookings_view'])->name('admin_bookings_view');
+        Route::get('/admin-wallet', [AdminController::class, 'admin_wallet'])->name('admin_wallet');
     });
 });

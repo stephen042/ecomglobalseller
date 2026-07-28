@@ -74,23 +74,6 @@
                     style="width: 30px; height: 30px ;vertical-align: middle; border-radius: 20%;">
                 <span class="fw-bold m-2">GLOBAL DASHBOARD</span>
             </li>
-
-            {{-- @if (Auth::user()->country == "Pakistan" ||
-            Auth::user()->country == "United Kingdom" ||
-            Auth::user()->country == "United States of America" ||
-            Auth::user()->country == "India" ||
-            Auth::user()->country == "United Arab Emirates" ||
-            Auth::user()->country == "Spain" ||
-            Auth::user()->country == "France")
-            <!-- Country Flag Section -->
-            <li class="nav-item d-flex align-items-center mx-2">
-                <a href="#" class="nav-link m-0 p-1">
-                    <img src="{{ URL('assets/countriesSvg/' . str_replace(' ', '', Auth::user()->country) . '.svg') }}"
-                        alt="Flag" style="width: 34px; height: 34px; vertical-align: middle;">
-                </a>
-            </li>
-            <!-- End Country Flag Section -->
-            @endif --}}
         </div><!-- End Logo -->
 
         <nav class="header-nav ms-auto">
@@ -99,7 +82,7 @@
 
                     <a class="nav-link nav-profile d-flex align-items-center pe-0 text-dark" href="#"
                         data-bs-toggle="dropdown">
-                        <span class="m-1"><i class="bi bi-camera"></i></span>
+                        <span class="m-1"><i class="bi bi-gear"></i></span>
                         <i class="bi bi-chevron-down me-2 fw-bold"></i>
                     </a><!-- End Profile Image Icon -->
 
@@ -112,6 +95,12 @@
                             <hr class="dropdown-divider">
                         </li>
 
+                        <li>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-person-circle"></i>
+                                <a class="btn" href="{{ route('user.profile') }}">Profile Settings </a>
+                            </div>
+                        </li>
                         <li>
                             <div class="dropdown-item d-flex align-items-center">
                                 {{-- sign out --}}
