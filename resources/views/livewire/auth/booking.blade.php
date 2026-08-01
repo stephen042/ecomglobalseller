@@ -1,11 +1,41 @@
-<div >
+<div>
+    <style>
+        .password-wrapper {
+            position: relative;
+        }
+
+        .password-wrapper input {
+            width: 100%;
+            padding-right: 45px;
+        }
+
+        .password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: #6c757d;
+        }
+
+        .password-toggle:hover {
+            color: #000;
+        }
+
+        .password-toggle svg {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
     <form wire:submit.prevent="save" style="font-size: 20px">
 
         <p class="comment-form-author">
             <label for="author">Name <span class="required" aria-hidden="true">*</span></label>
             <input id="author" wire:model.blur="name" type="text" value="" size="30" maxlength="245">
             @error('name')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
         <p class="comment-form-email">
@@ -13,13 +43,53 @@
             <input id="email" wire:model.blur="email" type="email" value="" size="30" maxlength="100"
                 aria-describedby="email-notes">
             @error('email')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
-        <p class="comment-form-url"><label for="phone">Phone <span class="required" aria-hidden="true">*</span></label>
+        <p class="comment-form-url">
+            <label for="phone">Phone <span class="required" aria-hidden="true">*</span></label>
             <input id="phone" wire:model.blur="phone" type="number" value="" size="30" maxlength="200">
             @error('phone')
+                <em class="text-danger">{{ $message }}</em>
+            @enderror
+        </p>
+
+        <!-- New Password Field -->
+        <p class="comment-form-url">
+            <label for="password">
+                Password <span class="required" aria-hidden="true">*</span>
+            </label>
+
+        <div class="password-wrapper">
+            <input id="password" wire:model.blur="password" type="password" size="30" maxlength="200">
+
+            <span class="password-toggle" id="togglePassword">
+                <!-- Eye Icon -->
+                <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5
+                    c4.478 0 8.268 2.943 9.542 7
+                    -1.274 4.057-5.064 7-9.542 7
+                    -4.477 0-8.268-2.943-9.542-7z" />
+                    <circle cx="12" cy="12" r="3" />
+                </svg>
+            </span>
+        </div>
+
+        @error('password')
             <em class="text-danger">{{ $message }}</em>
+        @enderror
+        </p>
+
+
+        <!-- New Confirm Password Field -->
+        <p class="comment-form-url">
+            <label for="password_confirmation">Confirm Password <span class="required"
+                    aria-hidden="true">*</span></label>
+            <input id="password_confirmation" wire:model.blur="password_confirmation" type="password" value=""
+                size="30" maxlength="200">
+            @error('password_confirmation')
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
@@ -290,7 +360,7 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
             @error('country')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
@@ -303,7 +373,7 @@
                 <option value="no">No</option>
             </select>
             @error('watch_training_before_applying')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
@@ -320,7 +390,7 @@
                 <option value="$10,000 - $20,000">$250 - $1,000</option>
             </select>
             @error('budget_to_invest')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
@@ -330,25 +400,27 @@
             <textarea id="comment" wire:model.blur="struggle_growing_business" cols="45" rows="8"
                 maxlength="65525"></textarea>
             @error('struggle_growing_business')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
         <p class="comment-form-comment">
             <label for="comment">What is your experience selling products on Amazon? <span class="required"
-                    aria-hidden="true">*</span></label> <textarea id="comment"
-                wire:model.blur="experience_selling_on_amazon" cols="45" rows="8" maxlength="65525"></textarea>
+                    aria-hidden="true">*</span></label>
+            <textarea id="comment" wire:model.blur="experience_selling_on_amazon" cols="45" rows="8"
+                maxlength="65525"></textarea>
             @error('experience_selling_on_amazon')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
         <p class="comment-form-comment">
             <label for="comment">If you're accepted, how soon can you get started? <span class="required"
-                    aria-hidden="true">*</span></label> <input id="phone" wire:model.blur="how_soon_will_you_start"
-                type="text" value="" size="30" maxlength="200">
+                    aria-hidden="true">*</span></label> <input id="phone"
+                wire:model.blur="how_soon_will_you_start" type="text" value="" size="30"
+                maxlength="200">
             @error('how_soon_will_you_start')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
@@ -361,15 +433,13 @@
                 <option value="no">No</option>
             </select>
             @error('promise')
-            <em class="text-danger">{{ $message }}</em>
+                <em class="text-danger">{{ $message }}</em>
             @enderror
         </p>
 
         <p class="form-submit">
-            <button wire:loading.attr="disabled" 
-                    wire:target="save"
-                    class="login100-form-btn text-white btn btn-primary" 
-                    type="submit">
+            <button wire:loading.attr="disabled" wire:target="save"
+                class="login100-form-btn text-white btn btn-primary" type="submit">
                 <span wire:loading.remove wire:target="save">Done</span>
                 <span wire:loading wire:target="save">
                     <x-spinner size="sm" />
@@ -381,4 +451,45 @@
         <span>Already have an account? </span>
         <a href="/access">Sign in</a>
     </span>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const password = document.getElementById('password');
+            const toggle = document.getElementById('togglePassword');
+            const icon = document.getElementById('eyeIcon');
+
+            toggle.addEventListener('click', function() {
+
+                if (password.type === 'password') {
+                    password.type = 'text';
+
+                    icon.innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 3l18 18"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10.584 10.587A2 2 0 0013.414 13.4"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.88 5.09A9.77 9.77 0 0112 5
+                    c4.477 0 8.268 2.943 9.542 7
+                    a9.752 9.752 0 01-4.293 5.135
+                    M6.228 6.228A9.76 9.76 0 002.458 12
+                    c1.274 4.057 5.065 7 9.542 7
+                    a9.77 9.77 0 004.09-.88"/>
+            `;
+                } else {
+                    password.type = 'password';
+
+                    icon.innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5
+                    c4.478 0 8.268 2.943 9.542 7
+                    -1.274 4.057-5.064 7-9.542 7
+                    -4.477 0-8.268-2.943-9.542-7z"/>
+                <circle cx="12" cy="12" r="3"/>
+            `;
+                }
+
+            });
+        });
+    </script>
 </div>
