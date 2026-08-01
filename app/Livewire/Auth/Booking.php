@@ -92,36 +92,36 @@ class Booking extends Component
             $bodyUser = [
                 'name' => $name,
                 'title' => 'Booking Confirmation',
-                'message' => "Hi $name,<br><br>
-                
-                Welcome to $app! Your account has been successfully created.<br><br>
+                'message' => "
 
-                <strong>Your Login Credentials:</strong><br>
-                Email: {$userEmail}<br>
-                Password: {$password}<br><br>
+                    Welcome to $app! Your account has been successfully created.<br><br>
 
-                <strong> IMPORTANT: Complete Your KYC Verification </strong><br><br>
-                To comply with regulatory requirements and ensure the security of your account, 
-                <strong>you are required to complete your KYC (Know Your Customer) verification</strong> 
-                as soon as you log in.<br><br>
+                    <strong>Your Login Credentials:</strong><br>
+                    Email: {$userEmail}<br>
+                    Password: {$password}<br><br>
 
-                <strong>Steps to complete KYC:</strong><br>
-                1. Log in to your account using the credentials above<br>
-                2. Navigate to your profile/dashboard<br>
-                3. Scroll to 'ID Document Verification'<br>
-                4. Upload your official government-issued identification document<br>
-                5. Submit for verification<br><br>
+                    <strong> IMPORTANT: Complete Your KYC Verification </strong><br><br>
+                    To comply with regulatory requirements and ensure the security of your account, 
+                    <strong>you are required to complete your KYC (Know Your Customer) verification</strong> 
+                    as soon as you log in.<br><br>
 
-                <strong>Your account will have limited functionality until KYC is completed.</strong><br>
-                We take your security seriously, and this process helps us protect your account 
-                and maintain a safe trading environment.<br><br>
+                    <strong>Steps to complete KYC:</strong><br>
+                    1. Log in to your account using the credentials above<br>
+                    2. Navigate to your profile/dashboard<br>
+                    3. Scroll to 'ID Document Verification'<br>
+                    4. Upload your official government-issued identification document<br>
+                    5. Submit for verification<br><br>
 
-                For any assistance, please contact our support team.<br><br>
+                    <strong>Your account will have limited functionality until KYC is completed.</strong><br>
+                    We take your security seriously, and this process helps us protect your account 
+                    and maintain a safe trading environment.<br><br>
 
-                Thanks for trusting our services.<br>
-                Best regards,<br>
-                The $app Team
-            ",
+                    For any assistance, please contact our support team.<br><br>
+
+                    Thanks for trusting our services.<br>
+                    Best regards,<br>
+                    The $app Team
+                ",
             ];
 
             $bodyAdmin = [
