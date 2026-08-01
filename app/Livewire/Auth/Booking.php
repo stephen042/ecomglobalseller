@@ -92,8 +92,7 @@ class Booking extends Component
             $bodyUser = [
                 'name' => $name,
                 'title' => 'Booking Confirmation',
-                'message' => "
-                Hi $name,<br><br>
+                'message' => "Hi $name,<br><br>
                 
                 Welcome to $app! Your account has been successfully created.<br><br>
 
