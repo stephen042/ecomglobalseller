@@ -65,15 +65,15 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
 
         <div class="d-flex align-items-center justify-content-between">
-            <a href="" class="logo d-flex align-items-center" style="height: 200px">
+            <a href="{{ route('dashboard') }}" class="logo d-flex align-items-center">
                 <span class="d-none d-lg-block">DASHBOARD</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
-            <li class="nav-item d-flex align-items-center ms-5">
+            <div class="d-flex align-items-center ms-5">
                 <img src="{{ URL('assets/img/seller.jpg') }}" alt="seller logo"
                     style="width: 30px; height: 30px ;vertical-align: middle; border-radius: 20%;">
                 <span class="fw-bold m-2">GLOBAL DASHBOARD</span>
-            </li>
+            </div>
         </div><!-- End Logo -->
 
         <nav class="header-nav ms-auto">
@@ -96,10 +96,10 @@
                         </li>
 
                         <li>
-                            <div class="dropdown-item d-flex align-items-center">
+                            <a class="dropdown-item d-flex align-items-center" href="{{ route('user.profile') }}">
                                 <i class="bi bi-person-circle"></i>
-                                <a class="btn" href="{{ route('user.profile') }}">Profile Settings </a>
-                            </div>
+                                <span>Profile Settings</span>
+                            </a>
                         </li>
                         <li>
                             <div class="dropdown-item d-flex align-items-center">

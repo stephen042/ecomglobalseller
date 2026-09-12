@@ -133,7 +133,7 @@
                             <th scope="col">Account Name</th>
                             <th scope="col">Account Number</th>
                             <th scope="col">Payment Method</th>
-                            <th scope="col">Status</dth>
+                            <th scope="col">Status</th>
                         </tr>
                     </thead>
                     <tbody>

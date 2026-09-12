@@ -10,17 +10,31 @@
             flex-direction: column;
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            z-index: 1000;
+            z-index: 995;
             transition: all 0.3s ease-in-out;
+        }
+
+        /* Mobile: hide sidebar off-screen */
+        @media (max-width: 1199px) {
+            .custom-sidebar {
+                left: -300px;
+            }
+        }
+
+        /* Mobile: show sidebar when body has toggle-sidebar */
+        @media (max-width: 1199px) {
+            .toggle-sidebar .custom-sidebar {
+                left: 0;
+            }
         }
 
         /* Desktop position overrides */
         @media (min-width: 1200px) {
             .custom-sidebar {
                 position: fixed;
-                top: 10;
+                top: 60px;
                 left: 0;
-                height: 100vh;
+                height: calc(100vh - 60px);
             }
         }
 

@@ -13,7 +13,7 @@
                             <th scope="col">Proof of Payment</th>
                             <th scope="col">Gift Card Images</th>
                             <th scope="col">status</th>
-                            <th scope="col">Action</dth>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -95,7 +95,7 @@
                             <th scope="col">Address </th>
                             <th scope="col">Swift/BIC code</th>
                             <th scope="col">status</th>
-                            <th scope="col">Action</dth>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>

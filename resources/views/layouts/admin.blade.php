@@ -41,7 +41,7 @@
             overflow-x: auto;
         }
     </style>
-
+    @livewireStyles
 </head>
 
 <body>
@@ -50,7 +50,7 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
 
         <div class="d-flex align-items-center justify-content-between">
-            <a href="" class="logo d-flex align-items-center" style="height: 200px">
+            <a href="{{ route('admin_dashboard') }}" class="logo d-flex align-items-center">
                 <span class="d-none d-lg-block">Admin</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -134,32 +134,11 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Attach click event listener to buttons with class "confirm"
-            var confirmButtons = document.querySelectorAll('.confirm');
-            confirmButtons.forEach(function(button) {
-                button.addEventListener('click', function(event) {
-                    // Display confirmation prompt
-                    var result = confirm("Are you sure you want to take this action?");
-
-                    // If user confirms, change the button text to "Please wait"
-                    if (result) {
-                        button.textContent = "Please wait...";
-                        // Optionally, disable the button to prevent further clicks
-                        button.disabled = true;
-                        // Here you can place the code to execute when the user confirms
-                        // alert("Action confirmed!");
-                    } else {
-                        // If user cancels, prevent the default action
-                        event.preventDefault();
-                    }
-                });
-            });
-        });
-
-
+        // Bootstrap confirm buttons are handled by Livewire's wire:confirm directive.
+        // No additional JS needed.
     </script>
 
+    @livewireScripts
 </body>
 
 </html>

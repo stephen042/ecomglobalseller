@@ -161,74 +161,74 @@
                             <div class="col-md-11 col-11">
                                 <div class="card">
                                     <ul class="list-group list-group-flush">
-                                        <a href="{{ route('add_product') }}">
-                                            <li class="list-group-item d-flex flex-row justify-content-between  p-3 rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="{{ route('add_product') }}" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"><i class="bi bi-tags-fill mx-2"></i> Add a Product
                                                 </div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
+                                            </a>
+                                        </li>
                                         {{-- modal --}}
-                                        <a href="javascript:void(0);" data-bs-toggle="modal"
-                                            data-bs-target="#viewSellingApplications">
-                                            <li class="list-group-item d-flex flex-row justify-content-between  p-3 rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="javascript:void(0);" data-bs-toggle="modal"
+                                                data-bs-target="#viewSellingApplications" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"><i class="bi bi-eye-fill mx-2"></i> View Selling
                                                     Applications</div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
+                                            </a>
+                                        </li>
 
-                                        <a href="{{ route('catalog') }}">
-                                            <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="{{ route('catalog') }}" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"> <i class="bi bi-bag-check mx-2"></i>Manage
                                                     Orders</div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
-                                        <a href="javascript:void(0);" data-bs-toggle="modal"
-                                            data-bs-target="#manageReturns">
-                                            <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="javascript:void(0);" data-bs-toggle="modal"
+                                                data-bs-target="#manageReturns" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"> <i class="bi bi-bag-dash-fill mx-2"></i> Manage
                                                     Returns</div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
-                                        <a href="mailto:{{ env('MAIL_USERNAME')}}">
-                                            <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="mailto:{{ env('MAIL_USERNAME')}}" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"><i class="bi bi-chat-left-fill mx-2"></i> Manage
                                                     Catalogs</div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
-                                        <a href="mailto:{{ env('MAIL_USERNAME')}}">
-                                            <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 border-none rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="mailto:{{ env('MAIL_USERNAME')}}" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"><i class="bi bi-cart mx-2"></i> Manage
                                                     Catalog</div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
-                                        <a href="{{ route('affiliate_marketing') }}">
-                                            <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="{{ route('affiliate_marketing') }}" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"> <i class="bi bi-shop-window mx-2"></i> Affiliate
                                                     Marketing </div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
+                                            </a>
+                                        </li>
                                         {{-- transaction histories --}}
-                                        <a href="{{ route('transaction_history') }}">
-                                            <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
-                                                style="border-bottom: 1px solid grey">
+                                        <li class="list-group-item d-flex flex-row justify-content-between p-3 rounded-1"
+                                            style="border-bottom: 1px solid grey">
+                                            <a href="{{ route('transaction_history') }}" class="text-dark text-decoration-none d-flex justify-content-between w-100">
                                                 <div class="text-dark"><i class="bi bi-credit-card mx-2"></i> Payments</div>
                                                 <div><i class="bi bi-chevron-right text-dark"></i></div>
-                                            </li>
-                                        </a>
+                                            </a>
+                                        </li>
                                     </ul>
 
                                 </div>

@@ -11,7 +11,7 @@
                         <th scope="col">email</th>
                         <th scope="col">Approved on</th>
                         <th scope="col">Balance</th>
-                        <th scope="col">Action</dth>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>

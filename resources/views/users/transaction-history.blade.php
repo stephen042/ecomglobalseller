@@ -31,7 +31,7 @@
                                     <th scope="col">Date</th>
                                     <th scope="col">Amount</th>
                                     <th scope="col">Payment Method</th>
-                                    <th scope="col">Status</dth>
+                                    <th scope="col">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
