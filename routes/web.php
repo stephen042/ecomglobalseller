@@ -18,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-})->name('home');
+Route::get('/', function () {return view('home.index');})->name('home');
 
 Route::get('/readymade-7000-drop-shipping-suppliers-in-usa-download-link', function () {
     return view('home.readymade-7000-drop-shipping-suppliers-in-usa-download-link');
